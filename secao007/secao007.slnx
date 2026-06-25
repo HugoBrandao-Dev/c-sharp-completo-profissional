@@ -6,5 +6,5 @@
   <Project Path="aula033/aula033.csproj" Id="81912572-ed76-4445-9048-e7020b5d214f" />
   <Project Path="aula034/aula034.csproj" Id="a1c41bce-0794-4320-9867-5c858af8f5f5" />
   <Project Path="aula035/aula035.csproj" Id="a742cf74-b795-421a-83d0-6f0b2197d89a" />
-  <Project Path="ConsoleApp1/aula032.csproj" Id="b349c979-242b-473e-b653-63d8f8975170" />
+  <Project Path="exConversorTemperaturas/exConversorTemperaturas.csproj" Id="220b92ba-09fc-440a-b309-619b2187394f" />
 </Solution>
