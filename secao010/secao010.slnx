@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="aula046/aula046.csproj" Id="9abbf305-5d7b-4d81-922f-662cad74445f" />
   <Project Path="aula047/aula047.csproj" Id="df056126-27a4-4ad7-9c2f-071116cf5a76" />
+  <Project Path="exCalculadora/exCalculadora.csproj" Id="6a000db8-b775-45a3-9b20-85db307c9f64" />
 </Solution>
