@@ -13,7 +13,7 @@ namespace exFibonacci
             short qtd;
 
             Console.WriteLine("=> SEQUÊNCIA FIBONACCI <=");
-            Console.WriteLine("\nQuantos valor quer que eu mostre? ");
+            Console.WriteLine("\nQuantos valores quer que eu mostre? ");
             Console.Write("> ");
             qtd = short.Parse(Console.ReadLine()); 
 
