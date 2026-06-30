@@ -1,4 +1,5 @@
 <Solution>
-  <Project Path="aula055/aula055.csproj" />
-  <Project Path="aula056/aula056.csproj" />
+  <Project Path="aula055/aula055.csproj" Id="120c188d-1b91-4c58-ae9d-66b180d0da76" />
+  <Project Path="aula056/aula056.csproj" Id="799ed166-2622-4970-ae2c-1e67cb22a402" />
+  <Project Path="aula057/aula057.csproj" Id="d777291c-b9b3-4dee-b5ae-04c4e220d060" />
 </Solution>
