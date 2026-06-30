@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{120C188D-1B91-4C58-AE9D-66B180D0DA76}</ProjectGuid>
+    <ProjectGuid>{799ED166-2622-4970-AE2C-1E67CB22A402}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>aula055</RootNamespace>
-    <AssemblyName>aula055</AssemblyName>
+    <RootNamespace>aula056</RootNamespace>
+    <AssemblyName>aula056</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MinhaClasseExterna.cs" />
+    <Compile Include="Pessoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
