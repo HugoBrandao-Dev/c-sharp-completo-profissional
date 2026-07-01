@@ -3,4 +3,7 @@
   <Project Path="aula056/aula056.csproj" Id="799ed166-2622-4970-ae2c-1e67cb22a402" />
   <Project Path="aula057/aula057.csproj" Id="d777291c-b9b3-4dee-b5ae-04c4e220d060" />
   <Project Path="aula058/aula058.csproj" Id="fe039cbc-14d9-4023-8dd5-6b8df5448b8e" />
+  <Project Path="aula059/aula059.csproj" Id="3678e739-dc0b-4359-956e-6303bc78d891" />
+  <Project Path="aula060/aula060.csproj" Id="fd2a8226-9dda-4bec-8c7e-77be7dbd217b" />
+  <Project Path="aula061/aula061.csproj" Id="8dd5665f-9920-4969-9649-d6838515d328" />
 </Solution>
