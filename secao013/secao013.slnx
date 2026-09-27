@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="aula080/aula080.csproj" />
+  <Project Path="aula081/aula081.csproj" />
+  <Project Path="aula082/aula082.csproj" />
 </Solution>
