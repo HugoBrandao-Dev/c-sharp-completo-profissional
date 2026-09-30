@@ -11,3 +11,7 @@ Carga horária: ~77h
 
 ### Seção 12 / Aula 079
 A aula 79 é uma continuação da aula 78. Sendo assim, todo o seu conteúdo está na aula 78.
+
+### Seção 13 - Mais sobre métodos / Aula 084...088
+Os conteúdos dessas aulas, já foram praticados na aula083, quando criei componentes e  
+chamei eventos.
