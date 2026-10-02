@@ -46,7 +46,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnCadAlt = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.txtEstadoCivil = new System.Windows.Forms.ComboBox();
+            this.cbEstadoCivil = new System.Windows.Forms.ComboBox();
             this.gboxSexo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -225,25 +225,21 @@
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = true;
             // 
-            // txtEstadoCivil
+            // cbEstadoCivil
             // 
-            this.txtEstadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEstadoCivil.FormattingEnabled = true;
-            this.txtEstadoCivil.Items.AddRange(new object[] {
-            "Solteiro(a)",
-            "Casado(a)",
-            "Divorciado(a)"});
-            this.txtEstadoCivil.Location = new System.Drawing.Point(15, 165);
-            this.txtEstadoCivil.Name = "txtEstadoCivil";
-            this.txtEstadoCivil.Size = new System.Drawing.Size(199, 28);
-            this.txtEstadoCivil.TabIndex = 16;
+            this.cbEstadoCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEstadoCivil.FormattingEnabled = true;
+            this.cbEstadoCivil.Location = new System.Drawing.Point(15, 165);
+            this.cbEstadoCivil.Name = "cbEstadoCivil";
+            this.cbEstadoCivil.Size = new System.Drawing.Size(199, 28);
+            this.cbEstadoCivil.TabIndex = 16;
             // 
             // formCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 521);
-            this.Controls.Add(this.txtEstadoCivil);
+            this.Controls.Add(this.cbEstadoCivil);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnCadAlt);
             this.Controls.Add(this.label5);
@@ -262,7 +258,6 @@
             this.Name = "formCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
-            this.Load += new System.EventHandler(this.formCadastro_Load);
             this.gboxSexo.ResumeLayout(false);
             this.gboxSexo.PerformLayout();
             this.ResumeLayout(false);
@@ -290,7 +285,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnCadAlt;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.ComboBox txtEstadoCivil;
+        private System.Windows.Forms.ComboBox cbEstadoCivil;
     }
 }
 
