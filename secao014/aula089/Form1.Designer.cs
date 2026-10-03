@@ -197,6 +197,7 @@
             this.lsCadastrados.Name = "lsCadastrados";
             this.lsCadastrados.Size = new System.Drawing.Size(353, 472);
             this.lsCadastrados.TabIndex = 12;
+            this.lsCadastrados.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lsCadastrados_MouseDoubleClick);
             // 
             // label5
             // 

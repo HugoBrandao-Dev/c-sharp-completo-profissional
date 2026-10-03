@@ -96,7 +96,23 @@ namespace aula089
             ps.Telefone = txtTelefone.Text;
             ps.CasaPropria = cbCasa.Checked;
             ps.Veiculo = cbVeiculo.Checked;
-            ps.Sexo = sexo;
+            
+            if (rdMasculino.Checked)
+            {
+
+                ps.Sexo = 'M';
+
+            } else if (rdFeminino.Checked)
+            {
+
+                ps.Sexo = 'F';
+
+            } else
+            {
+
+                ps.Sexo = 'O';
+
+            }
 
             foreach (Pessoa p in pessoas)
             {
@@ -146,6 +162,34 @@ namespace aula089
 
             listarCadastrados();
 
+        }
+
+        private void lsCadastrados_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            // Pega o objeto que está selecionado
+            Pessoa p = pessoas[lsCadastrados.SelectedIndex];
+
+            txtNome.Text = p.Nome;
+            txtDataNascimento.Text = p.DataNascimento;
+            txtTelefone.Text = p.Telefone;
+            cbEstadoCivil.SelectedItem = p.EstadoCivil;
+            cbCasa.Checked = p.CasaPropria;
+            cbVeiculo.Checked = p.Veiculo;
+
+            switch (p.Sexo)
+            {
+                case 'M':
+                    rdMasculino.Checked = true;
+                    break;
+                case 'F':
+                    rdFeminino.Checked = true;
+                    break;
+                case 'O':
+                    rdOutro.Checked = true;
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

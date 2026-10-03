@@ -15,3 +15,7 @@ A aula 79 é uma continuação da aula 78. Sendo assim, todo o seu conteúdo est
 ### Seção 13 - Mais sobre métodos / Aula 084...088
 Os conteúdos dessas aulas, já foram praticados na aula083, quando criei componentes e  
 chamei eventos.
+
+### Seção 14 - Windows Forms App de modo geral / Aula 089...093
+Os conteúdos dessas aulas, foram para a criação de um único programa, presente na  
+aula089
