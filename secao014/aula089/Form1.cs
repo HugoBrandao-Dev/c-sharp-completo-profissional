@@ -41,8 +41,7 @@ namespace aula089
 
             foreach (Pessoa cadastro in pessoas)
             {
-
-                // Adiciona o nome da pessoa a lista de cadastrados
+                // Adiciona o nome da pessoa na lista de cadastrados
                 lsCadastrados.Items.Add(cadastro.Nome);
             }
         }
@@ -66,11 +65,7 @@ namespace aula089
 
             // Campo de Telefone
 
-            /*
-             * Caso queira que venha sem a máscara (somente o valor).
             txtTelefone.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
-            Console.WriteLine(txtTelefone.Text);
-            */
 
             if (txtTelefone.Text == "")
             {
@@ -80,6 +75,8 @@ namespace aula089
                 return;
 
             }
+
+            // Campo de Sexo
 
             if (rdMasculino.Checked)
             {
@@ -121,7 +118,34 @@ namespace aula089
                 pessoas.Add(ps);
             }
 
+            btnLimpar_Click(btnLimpar, EventArgs.Empty);
+
             listarCadastrados();
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtNome.Text = "";
+            txtDataNascimento.Text = "";
+            txtTelefone.Text = "";
+            cbEstadoCivil.SelectedIndex = 0;
+            cbCasa.Checked = false;
+            cbVeiculo.Checked = false;
+
+            rdMasculino.Checked = true;
+            rdFeminino.Checked = false;
+            rdOutro.Checked = false;
+
+            txtNome.Focus();
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            // Remove a pessoa selecionada com o mouse da lista de pessoas.
+            pessoas.RemoveAt(lsCadastrados.SelectedIndex);
+
+            listarCadastrados();
+
         }
     }
 }
