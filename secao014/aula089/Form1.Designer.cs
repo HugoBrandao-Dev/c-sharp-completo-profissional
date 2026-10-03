@@ -35,8 +35,8 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtDataNascimento = new System.Windows.Forms.DateTimePicker();
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.chkCasa = new System.Windows.Forms.CheckBox();
-            this.chkVeiculo = new System.Windows.Forms.CheckBox();
+            this.cbCasa = new System.Windows.Forms.CheckBox();
+            this.cbVeiculo = new System.Windows.Forms.CheckBox();
             this.gboxSexo = new System.Windows.Forms.GroupBox();
             this.rdOutro = new System.Windows.Forms.RadioButton();
             this.rdFeminino = new System.Windows.Forms.RadioButton();
@@ -115,25 +115,25 @@
             this.txtTelefone.Size = new System.Drawing.Size(200, 26);
             this.txtTelefone.TabIndex = 7;
             // 
-            // chkCasa
+            // cbCasa
             // 
-            this.chkCasa.AutoSize = true;
-            this.chkCasa.Location = new System.Drawing.Point(14, 280);
-            this.chkCasa.Name = "chkCasa";
-            this.chkCasa.Size = new System.Drawing.Size(118, 17);
-            this.chkCasa.TabIndex = 8;
-            this.chkCasa.Text = "Possui casa própria";
-            this.chkCasa.UseVisualStyleBackColor = true;
+            this.cbCasa.AutoSize = true;
+            this.cbCasa.Location = new System.Drawing.Point(14, 280);
+            this.cbCasa.Name = "cbCasa";
+            this.cbCasa.Size = new System.Drawing.Size(118, 17);
+            this.cbCasa.TabIndex = 8;
+            this.cbCasa.Text = "Possui casa própria";
+            this.cbCasa.UseVisualStyleBackColor = true;
             // 
-            // chkVeiculo
+            // cbVeiculo
             // 
-            this.chkVeiculo.AutoSize = true;
-            this.chkVeiculo.Location = new System.Drawing.Point(13, 304);
-            this.chkVeiculo.Name = "chkVeiculo";
-            this.chkVeiculo.Size = new System.Drawing.Size(96, 17);
-            this.chkVeiculo.TabIndex = 9;
-            this.chkVeiculo.Text = "Possui veículo";
-            this.chkVeiculo.UseVisualStyleBackColor = true;
+            this.cbVeiculo.AutoSize = true;
+            this.cbVeiculo.Location = new System.Drawing.Point(13, 304);
+            this.cbVeiculo.Name = "cbVeiculo";
+            this.cbVeiculo.Size = new System.Drawing.Size(96, 17);
+            this.cbVeiculo.TabIndex = 9;
+            this.cbVeiculo.Text = "Possui veículo";
+            this.cbVeiculo.UseVisualStyleBackColor = true;
             // 
             // gboxSexo
             // 
@@ -215,6 +215,7 @@
             this.btnCadAlt.TabIndex = 14;
             this.btnCadAlt.Text = "Cadastrar / Alterar";
             this.btnCadAlt.UseVisualStyleBackColor = true;
+            this.btnCadAlt.Click += new System.EventHandler(this.btnCadAlt_Click);
             // 
             // btnLimpar
             // 
@@ -246,8 +247,8 @@
             this.Controls.Add(this.lsCadastrados);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.gboxSexo);
-            this.Controls.Add(this.chkVeiculo);
-            this.Controls.Add(this.chkCasa);
+            this.Controls.Add(this.cbVeiculo);
+            this.Controls.Add(this.cbCasa);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtDataNascimento);
             this.Controls.Add(this.txtNome);
@@ -274,8 +275,8 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.DateTimePicker txtDataNascimento;
         private System.Windows.Forms.MaskedTextBox txtTelefone;
-        private System.Windows.Forms.CheckBox chkCasa;
-        private System.Windows.Forms.CheckBox chkVeiculo;
+        private System.Windows.Forms.CheckBox cbCasa;
+        private System.Windows.Forms.CheckBox cbVeiculo;
         private System.Windows.Forms.GroupBox gboxSexo;
         private System.Windows.Forms.RadioButton rdFeminino;
         private System.Windows.Forms.RadioButton rdMasculino;

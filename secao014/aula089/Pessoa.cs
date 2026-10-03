@@ -17,9 +17,9 @@ namespace aula089
 
         public string Telefone { get; set; }
 
-        public string CasaPropria { get; set; }
+        public bool CasaPropria { get; set; }
 
-        public string Veiculo { get; set; }
+        public bool Veiculo { get; set; }
 
         public char Sexo { get; set; }
 
