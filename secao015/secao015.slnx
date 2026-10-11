@@ -8,4 +8,5 @@
   <Project Path="aula100/aula100.csproj" Id="fe491bd9-0e04-4878-9f92-8216f83eeba8" />
   <Project Path="aula101/aula101.csproj" Id="e90420f8-2baf-4670-90c6-80aba86137cd" />
   <Project Path="aula102/aula102.csproj" Id="7ce0ac3a-7a25-49e3-8638-00f29b3c4734" />
+  <Project Path="aula103/aula103.csproj" Id="089b38a6-e093-4598-ae6e-eff49cc2fb4a" />
 </Solution>
