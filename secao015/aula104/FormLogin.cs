@@ -21,5 +21,24 @@ namespace aula104
         {
 
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string nome = iptUsuario.Text;
+            string senha = iptSenha.Text;
+
+            if (CadastroUsuarios.Login(nome, senha))
+            {
+                this.Close();
+            } else
+            {
+                MessageBox.Show("Acesso Negado!");
+                iptUsuario.Text = "";
+                iptSenha.Text = "";
+                iptUsuario.Focus();
+                this.Close();
+            }
+
+        }
     }
 }
