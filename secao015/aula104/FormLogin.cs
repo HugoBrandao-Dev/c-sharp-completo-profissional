@@ -12,6 +12,7 @@ namespace aula104
 {
     public partial class FormLogin : Form
     {
+        public static bool Cancelar = false;
         public FormLogin()
         {
             InitializeComponent();
@@ -38,6 +39,13 @@ namespace aula104
                 iptUsuario.Focus();
                 this.Close();
             }
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Cancelar = true; // Cancelou com o Cancelar do formário de Login
+            Close();
 
         }
     }

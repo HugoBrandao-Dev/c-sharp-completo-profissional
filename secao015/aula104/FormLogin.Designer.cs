@@ -59,18 +59,19 @@
             // 
             // iptUsuario
             // 
-            this.iptUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iptUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iptUsuario.Location = new System.Drawing.Point(13, 147);
             this.iptUsuario.Name = "iptUsuario";
-            this.iptUsuario.Size = new System.Drawing.Size(294, 26);
+            this.iptUsuario.Size = new System.Drawing.Size(294, 40);
             this.iptUsuario.TabIndex = 2;
             // 
             // iptSenha
             // 
-            this.iptSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iptSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iptSenha.Location = new System.Drawing.Point(13, 232);
             this.iptSenha.Name = "iptSenha";
-            this.iptSenha.Size = new System.Drawing.Size(295, 26);
+            this.iptSenha.PasswordChar = '*';
+            this.iptSenha.Size = new System.Drawing.Size(295, 40);
             this.iptSenha.TabIndex = 4;
             // 
             // label3
@@ -91,6 +92,7 @@
             this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnLogin
             // 

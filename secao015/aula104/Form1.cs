@@ -21,7 +21,24 @@ namespace aula104
         {
 
             FormLogin fl = new FormLogin();
-            fl.ShowDialog();
+
+            while (CadastroUsuarios.UsuarioLogado == null)
+            {
+
+                this.Visible = false;
+                fl.ShowDialog();
+
+                // Cancelou pelo botão "Cancelar"
+                if (FormLogin.Cancelar)
+                {
+                    Application.Exit();
+                    return;
+                }
+                
+            }
+
+            txtInicio.Text = "Bem Vindo(a) \n" + CadastroUsuarios.UsuarioLogado.Nome;
+            Visible = true;
 
         }
     }
