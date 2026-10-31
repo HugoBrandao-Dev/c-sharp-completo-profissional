@@ -37,12 +37,12 @@
             this.btnTesoura = new System.Windows.Forms.Button();
             this.btnPapel = new System.Windows.Forms.Button();
             this.btnPedra = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pic = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
+            this.picPC = new System.Windows.Forms.PictureBox();
+            this.picResult = new System.Windows.Forms.PictureBox();
+            this.picJogador = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picPC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picResult)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picJogador)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTitulo
@@ -119,6 +119,7 @@
             this.btnTesoura.Size = new System.Drawing.Size(200, 200);
             this.btnTesoura.TabIndex = 11;
             this.btnTesoura.UseVisualStyleBackColor = true;
+            this.btnTesoura.Click += new System.EventHandler(this.btnTesoura_Click);
             // 
             // btnPapel
             // 
@@ -129,6 +130,7 @@
             this.btnPapel.Size = new System.Drawing.Size(200, 200);
             this.btnPapel.TabIndex = 10;
             this.btnPapel.UseVisualStyleBackColor = true;
+            this.btnPapel.Click += new System.EventHandler(this.btnPapel_Click);
             // 
             // btnPedra
             // 
@@ -139,30 +141,34 @@
             this.btnPedra.Size = new System.Drawing.Size(200, 200);
             this.btnPedra.TabIndex = 9;
             this.btnPedra.UseVisualStyleBackColor = true;
+            this.btnPedra.Click += new System.EventHandler(this.btnPedra_Click);
             // 
-            // pictureBox2
+            // picPC
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(264, 141);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.picPC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picPC.Location = new System.Drawing.Point(264, 141);
+            this.picPC.Name = "picPC";
+            this.picPC.Size = new System.Drawing.Size(200, 200);
+            this.picPC.TabIndex = 3;
+            this.picPC.TabStop = false;
             // 
-            // pictureBox1
+            // picResult
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(503, 141);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.picResult.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picResult.Location = new System.Drawing.Point(503, 141);
+            this.picResult.Name = "picResult";
+            this.picResult.Size = new System.Drawing.Size(200, 200);
+            this.picResult.TabIndex = 2;
+            this.picResult.TabStop = false;
             // 
-            // pic
+            // picJogador
             // 
-            this.pic.Location = new System.Drawing.Point(19, 141);
-            this.pic.Name = "pic";
-            this.pic.Size = new System.Drawing.Size(200, 200);
-            this.pic.TabIndex = 1;
-            this.pic.TabStop = false;
+            this.picJogador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picJogador.Location = new System.Drawing.Point(19, 141);
+            this.picJogador.Name = "picJogador";
+            this.picJogador.Size = new System.Drawing.Size(200, 200);
+            this.picJogador.TabIndex = 1;
+            this.picJogador.TabStop = false;
             // 
             // Form1
             // 
@@ -177,16 +183,16 @@
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.txtPC);
             this.Controls.Add(this.txtJogador);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pic);
+            this.Controls.Add(this.picPC);
+            this.Controls.Add(this.picResult);
+            this.Controls.Add(this.picJogador);
             this.Controls.Add(this.txtTitulo);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picResult)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picJogador)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,9 +201,9 @@
         #endregion
 
         private System.Windows.Forms.Label txtTitulo;
-        private System.Windows.Forms.PictureBox pic;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox picJogador;
+        private System.Windows.Forms.PictureBox picResult;
+        private System.Windows.Forms.PictureBox picPC;
         private System.Windows.Forms.Label txtJogador;
         private System.Windows.Forms.Label txtPC;
         private System.Windows.Forms.Label txtResult;

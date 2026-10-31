@@ -52,8 +52,8 @@ namespace aula122
         {
             int pc = JogadaPC();
 
-            Image ImgJogador = imagens[jogador];
-            Image ImgPC = imagens[pc];
+            imgJogadaJogador = imagens[jogador];
+            imgJogadaPC = imagens[pc];
 
             if (jogador == pc)
             {
@@ -72,8 +72,6 @@ namespace aula122
             }
 
         }
-
-
 
     }
 }

@@ -23,3 +23,7 @@ aula089.
 ### Seção 15 - Sistema de Login / Aula 104 ... 107
 Os conteúdos dessas aulas foram para criação de um único programa (Sistema de Login),  
 presente na aula104.
+
+### Seção 17 - JoKenPo / Aula 122 ... 124
+Os conteúdos dessas aulas foram para criação de um único programa (Jogo JoKenPo),  
+presente na aula122.
